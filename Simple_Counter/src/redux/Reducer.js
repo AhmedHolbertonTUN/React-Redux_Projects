@@ -10,9 +10,16 @@ const reducer = (state = initialState, action) => {
         counter: state.counter + 1
       };
     case "DECREMENT":
+      while (state.counter > 0) {
+        return {
+          ...state,
+          counter: state.counter - 1
+        };
+      }
+    case "RESET":
       return {
         ...state,
-        counter: state.counter - 1
+        counter: 0
       };
     default:
       return state;
