@@ -1,0 +1,107 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 25px;
+}
+.head {
+  margin-top: 25px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 200px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+input[type="submit"] {
+  width: 25%;
+  background-color: #1e95da;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: white;
+}
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #1985c4;
+}
+li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: -40px;
+  width: 70%;
+  border-radius: 10px;
+  background-color: #d86060;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.button {
+  background-color: rgb(11, 192, 102);
+  border: none;
+  height: 45px;
+  color: white;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.button:hover {
+  background-color: rgb(6, 136, 71);
+}
